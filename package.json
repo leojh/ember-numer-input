@@ -1,7 +1,7 @@
 {
-  "name": "numeric-input",
-  "version": "0.0.0",
-  "description": "The default blueprint for ember-cli addons.",
+  "name": "ember-numeric-input",
+  "version": "0.0.1",
+  "description": "Simple numeric text box",
   "directories": {
     "doc": "doc",
     "test": "tests"
