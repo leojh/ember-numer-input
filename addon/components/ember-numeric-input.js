@@ -30,8 +30,8 @@ export default Ember.TextField.extend({
     let keyCode = e.keyCode || e.which;
     let newChar = String.fromCharCode(keyCode);
     let value = (this.get('value') || "").toString().replace(this.getSelectionText(), "");
-
-    return value + newChar;
+    let position = this.$()[0].selectionStart;
+    return [value.slice(0, position), newChar, value.slice(position)].join('');
   },
 
   moreThanTwoDecimals: function(e) {
